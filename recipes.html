@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipesStyles.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>My Website</title>
+</head>
+<body>
+
+    <section class="header" id = "home">
+        <nav>
+            <img src="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png" alt="tasteMastersLogo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "#trendingRecipess">Trending Recipes</a></li>
+                    <li><a href = "#OurRecipes">Our Recipes</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+
+    <section class="trendingRecipess" id="trendingRecipess">
+        <h2 class="title">Our most trending recipes!</h2>
+        <p>Check out some of this week's trending recipes</p>
+    
+        <div class="row">
+            <div class="trendingRecipes-col">
+                <img src="images/meal1.jpeg" alt="meal1">
+                <div>
+                    <h2 class="title">Butter Chicken</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Noé Mathieu</h3>
+                    <i class=" fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                    <br>
+                    <p>40 <i class="fa fa-solid fa-heart"></i></p>
+                </div>
+            </div>
+            <div class="trendingRecipes-col">
+                <img src="images/meal2.jpeg" alt="meal2">
+                <div>
+                    <h2 class="title">Vegan Bowl</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Rahel Karolina</h3>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                    <br>
+                    <p>35 <i class="fa fa-solid fa-heart"></i></p>
+                </div>
+            </div>
+            <div class="trendingRecipes-col">
+                <img src="images/meal3.jpeg" alt="meal3">
+                <div>
+                    <h2 class="title">Grilled Salmon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Noé Mathieu</h3>
+                    <i class=" fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                    <br>
+                    <p>25 <i class="fa fa-solid fa-heart"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Recipes -->
+
+    <div class="OurRecipes" id="OurRecipes">
+        <div class="recipesSecName">
+            <h2 class="title">Our Recipes</h2>
+            <p>Check out our recipes!</p>
+        </div>
+        
+    </div>
+    <section class="recipes">    
+        <div class="row">
+           
+            
+            <div class="recipes-col container" id="expandableContainer">
+                <div class="infos">
+                    <img src="images/meal4.jpeg" alt="meal5">
+                    <div class="content">
+                        <h2 class="title">Ebi Tempura Bento</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h2 class="author">Noé Mathieu</h2>
+                        <i class="fa fa-solid fa-star"></i>
+                        <i class="fa fa-solid fa-star"></i>
+                        <i class="fa fa-solid fa-star"></i>
+                        <i class="fa fa-solid fa-star"></i>
+                        <i class="fa fa-regular fa-star"></i>
+                        <br>
+                        <p>11 <i class="fa fa-solid fa-heart"></i></p>
+                    </div>
+                </div>
+                <div class="details">
+                    <p>Here is the detailed information about Ebi Tempura Bento.</p>
+                </div>
+            </div>
+
+    <div class="recipes-col container" id="expandableContainer">
+        <div class="infos">
+            <img src="images/meal5.jpeg" alt="meal5">
+            <div class="content">
+                <h2 class="title">Ebi Tempura Bento</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="author">Noé Mathieu</h2>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-regular fa-star"></i>
+                <br>
+                <p>11 <i class="fa fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <div class="details">
+            <p>Here is the detailed information about Ebi Tempura Bento.</p>
+        </div>
+    </div>
+    <div class="recipes-col container" id="expandableContainer">
+        <div class="infos">
+            <img src="images/meal6.jpeg" alt="meal6">
+            <div class="content">
+                <h2 class="title">Mexican food</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="author">Noé Mathieu</h2>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-regular fa-star"></i>
+                <br>
+                <p>11 <i class="fa fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <div class="details">
+            <p>Here is the detailed information about Mexican food.</p>
+        </div>
+    </div>
+    <div class="recipes-col container" id="expandableContainer">
+        <div class="infos">
+            <img src="images/meal7.jpeg" alt="meal7">
+            <div class="content">
+                <h2 class="title">Pasta</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="author">Noé Mathieu</h2>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-regular fa-star"></i>
+                <br>
+                <p>11 <i class="fa fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <div class="details">
+            <p>Here is the detailed information about Pasta.</p>
+        </div>
+    </div>
+    <div class="recipes-col container" id="expandableContainer">
+        <div class="infos">
+            <img src="images/meal4.jpeg" alt="meal4">
+            <div class="content">
+                <h2 class="title">Ramen</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="author">Noé Mathieu</h2>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-regular fa-star"></i>
+                <br>
+                <p>11 <i class="fa fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <div class="details">
+            <p>Here is the detailed information about Ramen.</p>
+        </div>
+    </div>
+    <div class="recipes-col container" id="expandableContainer">
+        <div class="infos">
+            <img src="images/meal5.jpeg" alt="meal5">
+            <div class="content">
+                <h2 class="title">Ebi Tempura Bento</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="author">Noé Mathieu</h2>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-regular fa-star"></i>
+                <br>
+                <p>11 <i class="fa fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <div class="details">
+            <p>Here is the detailed information about Ebi Tempura Bento.</p>
+        </div>
+    </div>
+
+    
+    
+    </div>    
+    </section>
+
+    <!-- Contacts -->
+
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p class="e-mail">example@gmail.com</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate 
+            et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis
+            earum vel iusto unde a Lorem.</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Copyright © TasteMasters 2023</p>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+    
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        const containers = document.querySelectorAll('.container');
+        const overlay = document.getElementById('overlay');
+
+        containers.forEach(container => {
+            container.addEventListener('click', function() {
+                container.classList.toggle('expanded');
+                overlay.classList.toggle('active');
+            });
+        });
+
+        overlay.addEventListener('click', function() {
+            containers.forEach(container => {
+                container.classList.remove('expanded');
+            });
+            overlay.classList.remove('active');
+        });
+    });
+
+    window.addEventListener('scroll', function() {
+  hideMenu();
+});
+
+
+
+    </script>
+
+</body>
+</html>

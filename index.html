@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>My Website</title>
+</head>
+<body>
+
+    <section class="header" id = "home">
+        <nav>
+            <img src="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png" alt="tasteMastersLogo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "#home">HOME</a></li>
+                    <li><a href = "#recCategories">Recipe Categoriess</a></li>
+                    <li><a href = "#reviews">Reviews</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>TasteMasters</h1>
+            <p>Where flavor meets expertise</p>
+            <a href="recipes.html" class="hero-btn">Let's Cook!</a>
+        </div>
+
+    </section>
+    
+
+    <section class="recipeCategories" id = "recCategories" >
+        <h2>Recipe categories</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, amet provident repellat.</p>
+
+        <div class="row">
+            <div class="recipe-category">
+                <img src="images/steak_image.jpg" alt="steakImage">
+                <h3>Meat Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
+                dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
+            </div>
+            <div class="recipe-category">
+                <img src="images/fish_image.jpg" alt="fishImage">
+                <h3>Fish Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
+                dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
+            </div>
+            <div class="recipe-category">
+                <img src="images/vegan_image.jpg" alt="veganImage">
+                <h3>Vegan Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum quia vel incidunt illum distinctio nulla, 
+                dolorem necessitatibus iure quibusdam veritatis saepe dolore mollitia, exercitationem suscipit, ab et provident iste.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <button class="more" id="myButton">More recipes from TasteMasters</button>
+    </section>
+
+    <!-- Reviews -->
+
+    <section class="reviews" id="reviews">
+        <h2>Some of our reviews</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+        <div class="row">
+            <div class="review-col">
+                <img src="images/user.jpg" alt="user1">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique aut vero, beatae fugiat dolores accusamus deserunt  quod consectetur aperiam atque impedit quas eos alias officia sapiente. </p>
+                    <h3>Noé Mathieu</h3>
+                    <i class=" fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="review-col">
+                <img src="images/user.jpg" alt="user2">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique aut vero, beatae fugiat dolores accusamus deserunt quod consectetur aperiam atque impedit quas eos alias officia sapiente.  </p>
+                    <h3>Rahel Karolina</h3>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p class="e-mail">example@gmail.com</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos cupiditate 
+            et magni error a eius ratione in repudiandae nulla aliquam, dolorem quod? Vero veritatis
+            earum vel iusto unde a Lorem.</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Copyright © TasteMasters 2023</p>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+    
+        }
+
+        function redirect(){
+
+        }
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "recipes.html";
+        });
+
+
+    </script>
+
+</body>
+</html>
