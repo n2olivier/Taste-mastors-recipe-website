@@ -1,52 +1,51 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
-.header{
+/* Header */
+.header {
     width: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
-
 }
 
-nav{
+/* Navigation */
+nav {
     display: flex;
     padding: 2% 2%;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     background-color: #333;
-    
 }
 
-nav img{
+nav img {
     width: 100px;
 }
 
-.nav-links{
+.nav-links {
     flex: 1;
     text-align: right;
-    
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
-    position:  relative;
+    position: relative;
 }
 
-.nav-links ul li a{
-    color:#fff;
+.nav-links ul li a {
+    color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
 
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -56,70 +55,68 @@ nav img{
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
     width: 100%;
-    
 }
 
-.text-box{
+/* Text Box */
+.text-box {
     width: 90%;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.text-box h1{
-    font-size: 62px;
+.text-box h1 {
+    font-size: 4rem; /* Use rem for better scalability */
 }
 
-.text-box p{
+.text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
+    font-size: 1rem;
 }
 
-.hero-btn{
+.hero-btn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 1rem;
     background: transparent;
-    position: relative;
     cursor: pointer;
     transition: 1s;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
     border: 1px solid #c90d0d;
     background-color: #c90d0d;
-    
 }
 
-nav .fa{
+/* FontAwesome Icons */
+nav .fa {
     display: none;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
 
-    .header img{
+    /* Header Image */
+    .header img {
         width: 30%;
     }
 
-    .text-box h2{
-        font-size: 20px;
+    .text-box h2 {
+        font-size: 2rem; /* Adjusted for mobile */
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
-        
     }
 
-    .nav-links{
+    .nav-links {
         position: fixed;
         background-color: rgba(253, 2, 2, 0.5);
         backdrop-filter: blur(10px);
@@ -128,12 +125,11 @@ nav .fa{
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 2 ;
+        z-index: 2;
         transition: 1s;
     }
 
-    nav .fa{
-       position: static;
+    nav .fa {
         display: block;
         color: #fff3f3;
         margin: 10px;
@@ -141,26 +137,26 @@ nav .fa{
         cursor: pointer;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         padding: 30px;
     }
 }
 
-@media (max-width:400px) {
-    .header img{
+/* Small Screen Header Image */
+@media (max-width: 400px) {
+    .header img {
         width: 50%;
     }
 }
 
-/* Trening recipes */
+/* Trending Recipes Section */
 .row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-
-.trendingRecipess {
+.trendingRecipes {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -173,7 +169,6 @@ nav .fa{
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
-    box-sizing: border-box;
     transition: 1s;
     text-align: left;
     border: 2px solid transparent;
@@ -183,16 +178,12 @@ nav .fa{
 .trendingRecipes-col img {
     object-fit: contain;
     width: 100%;
-    height: auto;
     border-radius: 10px;
     margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
 }
 
 .trendingRecipes-col p {
-    padding: 0;
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 .trendingRecipes-col h3 {
@@ -209,50 +200,52 @@ nav .fa{
     cursor: pointer;
 }
 
+/* Media Queries for Trending Recipes */
 @media (max-width: 849px) {
     .trendingRecipes-col h3 {
-        font-size: 90%;
+        font-size: 0.9rem;
     }
 
     .trendingRecipes-col p {
-        font-size: 90%;
+        font-size: 0.9rem;
     }
 
     .title {
-        font-size: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media (max-width: 860px) {
     .trendingRecipes-col img {
         width: 100%;
-        flex-basis: 16%;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        position: relative;
-        overflow: hidden;
     }
 
     .trendingRecipes-col {
         width: 40%;
-        flex-basis: 40%;
     }
 
     .trendingRecipes-col h3 {
-        font-size: 90%;
+        font-size: 0.9rem;
     }
 
     .trendingRecipes-col p {
-        font-size: 90%;
+        font-size: 0.9rem;
     }
 
     .title {
-        font-size: 90%;
+        font-size: 0.9rem;
     }
 }
 
-/* Recipes */
-
+/* Recipes Section */
 .recipesSecName {
     margin-top: 30px;
     text-align: center;
@@ -284,7 +277,7 @@ nav .fa{
 }
 
 .recipes .author {
-    font-size: 110%;
+    font-size: 1.1rem;
 }
 
 .recipes .fa {
@@ -298,12 +291,8 @@ nav .fa{
 .recipes .recipes-col img {
     object-fit: contain;
     width: 300px;
-    height: auto;
-    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
 }
 
 .recipes-col:hover {
@@ -311,13 +300,14 @@ nav .fa{
     cursor: pointer;
 }
 
+/* Media Queries for Recipes Section */
 @media (max-width: 900px) {
     .content {
-        font-size: 70%;
+        font-size: 0.7rem;
     }
 
     .content h3 {
-        font-size: 50%;
+        font-size: 0.5rem;
     }
 
     .recipes .recipes-col img {
@@ -329,7 +319,7 @@ nav .fa{
     }
 }
 
-/* Additional styles for the expandable container */
+/* Expandable Container */
 .container {
     width: 300px;
     padding: 20px;
@@ -337,22 +327,19 @@ nav .fa{
     border-radius: 10px;
     background-color: #fff3f3;
     cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s, top 0.3s, left 0.3s, width 0.3s, height 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
     position: relative;
     z-index: 10;
-    box-sizing: border-box;
     text-align: left;
     margin-bottom: 5%;
     margin-right: 10px;
 }
 
-/* Hover effect */
 .container:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #f44336;
 }
 
-/* Expanded container styling */
 .container.expanded {
     position: fixed;
     top: 50%;
@@ -364,23 +351,19 @@ nav .fa{
     overflow: auto;
 }
 
-/* Summary section styling */
 .summary {
     font-weight: bold;
 }
 
-/* Details section styling (hidden by default) */
 .details {
     display: none;
     margin-top: 10px;
 }
 
-/* Transition for smooth expand/collapse */
 .container.expanded .details {
     display: block;
 }
 
-/* Overlay background */
 .overlay {
     display: none;
     position: fixed;
@@ -396,61 +379,55 @@ nav .fa{
     display: block;
 }
 
-
 /* Footer */
-
-.footer{
-    background-image: linear-gradient(#333,#333);
+.footer {
+    background-image: linear-gradient(#333, #333);
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    
 }
 
-.footer h2{
-    color:#fff3f3;
+.footer h2 {
+    color: #fff3f3;
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
 }
 
-.footer .e-mail{
+.footer .e-mail {
     color: #f44336;
     font-size: 15px;
 }
 
-.footer .fa{
+.footer .fa {
     color: #f44336;
 }
 
-.footer p{
+.footer p {
     color: #fff3f3;
-    flex-basis: 50%;
     margin-right: 20%;
     margin-left: 20%;
 }
 
-@media (max-width:700px) {
-    .footer p{
-        flex-basis: 50%;
+@media (max-width: 700px) {
+    .footer p {
         margin-right: 10%;
         margin-left: 10%;
     }
 }
 
-/* Scroll bar */
-
-::-webkit-scrollbar{
+/* Custom Scrollbar */
+::-webkit-scrollbar {
     width: 12px;
     background-color: #333;
-    
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     border-radius: 35px;
-    background-color: #333 ;
+    background-color: #333;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     border-radius: 25px;
     background-color: #f44336;
 }
-
