@@ -97,11 +97,10 @@
             <p>Check out our recipes!</p>
         </div>
     </div>
-    
     <section class="recipes">    
         <div class="row">
-            <div class="recipes-col container" id="expandableContainer">
-                <div class="infos">
+            <div class="recipes-col container">
+                <div class="infos" onclick="toggleDetails(this)">
                     <img src="images/meal4.jpeg" alt="meal5">
                     <div class="content">
                         <h2 class="title">Ebi Tempura Bento</h2>
@@ -121,8 +120,8 @@
                 </div>
             </div>
     
-            <div class="recipes-col container" id="expandableContainer">
-                <div class="infos">
+            <div class="recipes-col container">
+                <div class="infos" onclick="toggleDetails(this)">
                     <img src="images/meal5.jpeg" alt="meal5">
                     <div class="content">
                         <h2 class="title">Ebi Tempura Bento</h2>
@@ -142,8 +141,8 @@
                 </div>
             </div>
     
-            <div class="recipes-col container" id="expandableContainer">
-                <div class="infos">
+            <div class="recipes-col container">
+                <div class="infos" onclick="toggleDetails(this)">
                     <img src="images/meal6.jpeg" alt="meal6">
                     <div class="content">
                         <h2 class="title">Mexican Food</h2>
@@ -163,8 +162,8 @@
                 </div>
             </div>
     
-            <div class="recipes-col container" id="expandableContainer">
-                <div class="infos">
+            <div class="recipes-col container">
+                <div class="infos" onclick="toggleDetails(this)">
                     <img src="images/meal7.jpeg" alt="meal7">
                     <div class="content">
                         <h2 class="title">Pasta</h2>
@@ -184,8 +183,8 @@
                 </div>
             </div>
     
-            <div class="recipes-col container" id="expandableContainer">
-                <div class="infos">
+            <div class="recipes-col container">
+                <div class="infos" onclick="toggleDetails(this)">
                     <img src="images/meal4.jpeg" alt="meal4">
                     <div class="content">
                         <h2 class="title">Ramen</h2>
@@ -205,8 +204,8 @@
                 </div>
             </div>
     
-            <div class="recipes-col container" id="expandableContainer">
-                <div class="infos">
+            <div class="recipes-col container">
+                <div class="infos" onclick="toggleDetails(this)">
                     <img src="images/meal5.jpeg" alt="meal5">
                     <div class="content">
                         <h2 class="title">Ebi Tempura Bento</h2>
@@ -284,9 +283,21 @@
   hideMenu();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const containers = document.querySelectorAll('.container');
+
+    containers.forEach(container => {
+        container.addEventListener('click', function () {
+            const details = container.querySelector('.details');
+            if (details) {
+                details.classList.toggle('details-visible');
+            }
+        });
+    });
+});
 
 
-    </script>
+</script>
 
 </body>
 </html>
