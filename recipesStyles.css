@@ -366,15 +366,16 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    cursor: pointer; /* Add pointer cursor to indicate interactivity */
+    cursor: pointer; 
 }
 
 .container:hover {
     background-color: #f7f7f7; /* Optional: highlight on hover */
 }
 
-@media (max-width: 480px) {
-    .row {
-        
+@media (max-width: 500px) {
+    .row .trendingRecipes-col{
+        margin: auto;
+        width: auto;
     }
 }
