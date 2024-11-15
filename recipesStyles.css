@@ -208,7 +208,7 @@ nav .fa {
 .row .trendingRecipes-col:hover .miwords {
     opacity: 1;
     transform: scale(1);
-    outline: #ff7e7e;
+    border: 1px solid red;
 }
 
 .row .trendingRecipes-col h2,p{
